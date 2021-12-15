@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/masterListFragment">
+
+    <fragment
+        android:id="@+id/masterListFragment"
+        android:name="com.chiki.androidme.ui.MasterListFragment"
+        android:label="MasterListFragment"
+        tools:layout="@layout/fragment_master_list">
+        <action
+            android:id="@+id/action_masterListFragment_to_allBodyPartsFragment"
+            app:destination="@id/allBodyPartsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allBodyPartsFragment"
+        android:name="com.chiki.androidme.ui.AllBodyPartsFragment"
+        android:label="AllBodyPartsFragment"
+        tools:layout="@layout/fragment_all_body_parts"/>
+</navigation>
